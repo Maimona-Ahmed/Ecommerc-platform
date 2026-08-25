@@ -1,0 +1,75 @@
+POST http://localhost:8000/api/auth/register/
+Content-Type: application/json
+
+{   "username": "aya",
+    "email": "aya@gmail.com",
+    "password":"Win@2023",
+    "password2":"Win@2023"
+}
+###
+POST http://localhost:8000/api/auth/login/
+Content-Type: application/json
+
+{   
+    "email": "aya@gmail.com",
+    "password":"Win@2023"
+}
+###
+GET http://localhost:8000/api/categories/
+Content-Type: application/json
+###
+GET http://localhost:8000/api/products/classic-dress/
+Content-Type: application/json
+###
+POST   http://localhost:8000/api/cart/items/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzg2NDUyNDc1LCJpYXQiOjE3ODY0NTIxNzUsImp0aSI6Ijk1MmRiYzM1NmJiYzRkNzU5ZmRiMmY4NGE1OTZiYzE4IiwidXNlcl9pZCI6IjIifQ.U6kcBJngFEUUuObcNotWUp8hl7oSOvQxz0DZ7CITp8s
+Content-Type: application/json
+
+{
+    "variant_id":5,
+    "quantity":100
+}
+###
+PATCH   http://localhost:8000/api/cart/items/5/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzg2NTUzNTUyLCJpYXQiOjE3ODY1NTMyNTIsImp0aSI6ImU5MWYxYjYzNmMxMTQwNDc4NjAzNGRjZWNmMDUyNGVhIiwidXNlcl9pZCI6IjIifQ.PdlV7RnA54oFGLtD0yRTJHDgQG1txRirzUwxxYfZsGw
+Content-Type: application/json
+
+{
+    "item_id":5,
+    "quantity":3
+}
+###
+GET  http://localhost:8000/api/cart/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzg2NTU2MTAwLCJpYXQiOjE3ODY1NTU4MDAsImp0aSI6IjQ2MzBlZTI5Nzc0NTQ3ZjRhNTQ0MGM2ZmE4YWYzOGRjIiwidXNlcl9pZCI6IjIifQ.Xd79yU9LA_KYNjYK8lXYHntOZfkJkW8yBPpG7vkk-54
+
+###
+
+###
+DELETE  http://localhost:8000/api/cart/items/5/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzg2NTUzNTUyLCJpYXQiOjE3ODY1NTMyNTIsImp0aSI6ImU5MWYxYjYzNmMxMTQwNDc4NjAzNGRjZWNmMDUyNGVhIiwidXNlcl9pZCI6IjIifQ.PdlV7RnA54oFGLtD0yRTJHDgQG1txRirzUwxxYfZsGw
+
+###
+POST   http://localhost:8000/api/wishlist/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzg2NjEyNDcxLCJpYXQiOjE3ODY2MTIxNzEsImp0aSI6ImUxMjQxZTQ3MTNmODQ3NzE5OWViYmQxOWQzZTAzM2ZkIiwidXNlcl9pZCI6IjIifQ.n3LMkcnVLXkFTRn_LTi3SRdRwndnSyZ5TlT3B6-s-bs
+Content-Type: application/json
+
+{
+    "product_id":1
+}
+
+
+###
+GET  http://localhost:8000/api/wishlist/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzg2NjEyNDcxLCJpYXQiOjE3ODY2MTIxNzEsImp0aSI6ImUxMjQxZTQ3MTNmODQ3NzE5OWViYmQxOWQzZTAzM2ZkIiwidXNlcl9pZCI6IjIifQ.n3LMkcnVLXkFTRn_LTi3SRdRwndnSyZ5TlT3B6-s-bs
+
+###
+DELETE  http://localhost:8000/api/wishlist/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzg2NjEwNTU0LCJpYXQiOjE3ODY2MTAyNTQsImp0aSI6IjNlMmNkODQyNGNmYzQ3ZmFhMWFkNzI4MGFkOTkxOGNlIiwidXNlcl9pZCI6IjIifQ.LoUrBH-5V8HRGcAb9bpVXcuhyzmGPWiLOVyTdavJ9tA
+Content-Type: application/json
+
+{
+    "product_id":1
+}
+
+
+
